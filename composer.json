@@ -1,0 +1,23 @@
+{
+    "name": "chrisvoo/pdp",
+    "description": "Provides PHP design patterns examples",
+    "keywords": ["php", "patterns", "design"],
+    "authors": [
+        {
+            "name": "Christian Castelli",
+            "email": "voodoo81people@gmail.com",
+            "role": "maintainer"
+        }
+    ],
+    "version": "0.0.1",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {"Pdp\\": "src/"}
+    },
+    "require": {
+        "php": ">=7.4"
+    },
+    "require-dev": {
+
+    }
+}
