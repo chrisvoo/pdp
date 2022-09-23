@@ -40,8 +40,6 @@ Martin.
   high-level module must not depend on the low-level module, but they should depend on abstractions.
 
 
-
-
 ## Tricks
 
 * Every time you try to `var_dump` an object that has the `__debugInfo` magic method set, the `var_dump` will be 
@@ -51,16 +49,3 @@ overridden with the result of that function call instead.
 
 Create objects knowing only the interfaces they implement (without knowing the actual class). This way, it's
 easy to add new sorts of concrete products to the system without changing any of the code that uses those products.
-
-## Simple Factory
-Simple factory pattern, also known as static factory method pattern, it belongs to the class 
-creation pattern. In the simple factory pattern, you can return instances of different 
-classes based on different parameters. The simple factory pattern specifically defines a 
-class to be responsible for creating instances of other classes, and the created instances 
-usually have a same parent class.
-Strictly speaking, the simple factory pattern is not actually a design pattern, it looks 
-more like a kind of coding habit.
-
-## Factory method
-The Factory Method differs from the ordinary Simple Factory on the basis that instead of us
-having one factory, we can have many.
