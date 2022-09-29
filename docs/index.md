@@ -44,8 +44,3 @@ Martin.
 
 * Every time you try to `var_dump` an object that has the `__debugInfo` magic method set, the `var_dump` will be 
 overridden with the result of that function call instead.
-
-## Abstract factory
-
-Create objects knowing only the interfaces they implement (without knowing the actual class). This way, it's
-easy to add new sorts of concrete products to the system without changing any of the code that uses those products.
