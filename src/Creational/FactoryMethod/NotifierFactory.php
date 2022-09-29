@@ -1,6 +1,6 @@
 <?php
 
-namespace Pdp\FactoryMethod;
+namespace Pdp\Creational\FactoryMethod;
 
 /**
  * User: Junade Ali

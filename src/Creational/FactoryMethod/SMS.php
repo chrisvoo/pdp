@@ -1,10 +1,14 @@
 <?php
 
-namespace Pdp\SimpleFactory;
+namespace Pdp\Creational\FactoryMethod;
 
 use Exception;
 
-
+/**
+ * User: Junade Ali
+ * Date: 13/03/2016
+ * Time: 15:00
+ */
 class SMS extends Notifier
 {
     public function validateTo(): bool
@@ -12,7 +16,7 @@ class SMS extends Notifier
         $pattern = '/^(\+44\s?7\d{3}|\(?07\d{3}\)?)\s?\d{3}\s?\d{3}$/';
         $isPhone = preg_match($pattern, $this->to);
 
-        return (bool)$isPhone;
+        return $isPhone ? true : false;
 
     }
 

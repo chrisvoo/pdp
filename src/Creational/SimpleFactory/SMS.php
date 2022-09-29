@@ -1,31 +1,26 @@
 <?php
 
-namespace Pdp\FactoryMethod;
+namespace Pdp\Creational\SimpleFactory;
 
 use Exception;
 
-/**
- * User: Junade Ali
- * Date: 13/03/2016
- * Time: 15:00
- */
-class Post extends Notifier
+
+class SMS extends Notifier
 {
     public function validateTo(): bool
     {
-        $address = explode(',', $this->to);
-        if (count($address) !== 2) {
-            return false;
-        }
+        $pattern = '/^(\+44\s?7\d{3}|\(?07\d{3}\)?)\s?\d{3}\s?\d{3}$/';
+        $isPhone = preg_match($pattern, $this->to);
 
-        return true;
+        return (bool)$isPhone;
+
     }
 
     public function sendNotification(): string
     {
 
         if ($this->validateTo() === false) {
-            throw new Exception("Invalid address.");
+            throw new Exception("Invalid phone number.");
         }
 
         $notificationType = get_class($this);

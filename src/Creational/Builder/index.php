@@ -1,7 +1,7 @@
 <?php
-namespace Pdp\Builder;
+namespace Pdp\Creational\Builder;
 
-require __DIR__ . '/../../vendor/autoload.php';
+require __DIR__ . '/../../../vendor/autoload.php';
 
 $pizzaRecipe = (new PizzaBuilder(9))
     ->cheese(true)

@@ -1,6 +1,6 @@
 <?php
 
-namespace Pdp\AbstractFactory;
+namespace Pdp\Creational\AbstractFactory;
 
 use Pdp\AbstractFactory\Toys\MazeToy;
 use Pdp\AbstractFactory\Toys\PuzzleToy;

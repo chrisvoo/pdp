@@ -5,7 +5,7 @@
  * Time: 20:05
  */
 
-namespace Pdp\AbstractFactory;
+namespace Pdp\Creational\AbstractFactory;
 
 require __DIR__ . '/../../vendor/autoload.php';
 

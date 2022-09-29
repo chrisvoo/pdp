@@ -1,6 +1,6 @@
 <?php
 
-namespace Pdp\SimpleFactory;
+namespace Pdp\Creational\SimpleFactory;
 
 /**
  * User: Junade Ali

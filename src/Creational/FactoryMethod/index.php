@@ -5,9 +5,9 @@
  * Time: 21:20
  */
 
-namespace Pdp\FactoryMethod;
+namespace Pdp\Creational\FactoryMethod;
 
-require __DIR__ . '/../../vendor/autoload.php';
+require __DIR__ . '/../../../vendor/autoload.php';
 
 require_once('SMS.php');
 $mobile = ElectronicNotifierFactory::getNotifier("SMS", "07111111111");

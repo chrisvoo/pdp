@@ -1,6 +1,6 @@
 <?php
 
-namespace Pdp\SimpleFactory;
+namespace Pdp\Creational\SimpleFactory;
 
 use Exception;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Pdp\Builder;
+namespace Pdp\Creational\Builder;
 
 /**
  * User: Junade Ali
