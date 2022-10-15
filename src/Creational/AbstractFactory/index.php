@@ -7,7 +7,7 @@
 
 namespace Pdp\Creational\AbstractFactory;
 
-require __DIR__ . '/../../vendor/autoload.php';
+require __DIR__ . '/../../../vendor/autoload.php';
 
 $sanFraciscoFactory = new SFToyFactory();
 var_dump($sanFraciscoFactory->makeMaze());
